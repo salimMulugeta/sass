@@ -5,7 +5,7 @@ import * as fs from 'fs';
 import * as toc from '../tool/toc';
 
 if (process.env.CI) colors.enable();
-
+// Hello World
 toc.files.forEach(file => {
   const markdown = fs.readFileSync(file).toString();
   const currentToc = toc.getCurrent(markdown);
